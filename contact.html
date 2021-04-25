@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="./style.css" />
 
-    <title>Proiecte</title>
+    <title>Contact</title>
   </head>
   <body>
     <div class="loading">
@@ -74,7 +74,7 @@
       </svg>
     </div>
 
-    <a href="#" class="back-top">&#8593;</a>
+    <a href="#" class="back-top" style="display: none">&#8593;</a>
 
     <div class="container">
       <header class="header" id="top">
@@ -123,7 +123,61 @@
         </ul>
       </div>
 
-      <main class="proiecte"></main>
+      <main class="contact">
+        <h1 class="contact-title">
+          Contactează-ne completând formularul de mai jos:
+        </h1>
+
+        <form
+          action="https://formspree.io/f/xrgrbnpd"
+          class="form"
+          method="post"
+        >
+          <div class="form-nume">
+            <input
+              type="text"
+              name="nume"
+              class="form-input form-input-nume"
+              placeholder="Nume"
+              required
+              autofocus
+              autocomplete="name"
+            />
+            <input
+              type="text"
+              name="prenume"
+              class="form-input form-input-prenume"
+              placeholder="Prenume"
+              required
+              autocomplete="name"
+            />
+          </div>
+          <input
+            type="email"
+            name="email"
+            class="form-input form-input-email"
+            placeholder="Email"
+            required
+            autocomplete="email"
+          />
+          <textarea
+            name="text"
+            class="form-input form-input-text"
+            placeholder="Textul tău..."
+            required
+          ></textarea>
+
+          <button class="form-button" type="submit">Trimite</button>
+        </form>
+
+        <h1 class="contact-title">Contactează-ne prin telefon la:</h1>
+        <p class="telefon">
+          <span class="telefon-nr">0766739164</span> - Noelia
+        </p>
+        <p class="telefon">
+          <span class="telefon-nr">0753890552</span> - Paula
+        </p>
+      </main>
     </div>
     <script src="all.js"></script>
   </body>
